@@ -59,9 +59,11 @@ realtimeRoute.get('/reactshow', (req, res) => {
 // //write random data number to json when is page accessed
 // let data = JSON.stringify(rData);
 // fs.writeFileSync('./realtimedb.json', data);
-var mydata = fs.readFileSync('./src/realtimeDB.JSON','utf8')
-mydata = JSON.parse(mydata)
 
+
+// var mydata = fs.readFileSync('./src/realtimeDB.JSON','utf8')
+// mydata = JSON.parse(mydata)
+mydata = ["1","2"]
 console.log(req.query.getRtJson)
 if (req.query.getRtJson) {
 

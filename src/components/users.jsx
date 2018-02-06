@@ -21,25 +21,7 @@ handleSubmit(e){
     .catch(err => console.log(err))
 };
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  render() {
-    return (<div className="Userhome">
 
-        {
-          this.info
-            ? this.info.map(int => {
-              return (<p>
-                {int}
-              </p>)
-            })
-            : null
-        }
-
-      <form className="usersForm" action="#" method="POST" onSubmit={this.handleSubmit}>
-        <div className="FormContainer">
-=======
   render(){
     return(
       <div className="Userhome">
@@ -52,44 +34,13 @@ handleSubmit(e){
                 </li>
               )
             })
-=======
-  render(){
-    return(
-      <div className="Userhome">
-        <ul>
-          {this.info ?
-           this.info.map(int => {
-              return(
-                <li>
-                  {int}
-                </li>
-              )
-            })
->>>>>>> parent of 9f956fc... realtime update
-=======
-  render(){
-    return(
-      <div className="Userhome">
-        <ul>
-          {this.info ?
-           this.info.map(int => {
-              return(
-                <li>
-                  {int}
-                </li>
-              )
-            })
->>>>>>> parent of 9f956fc... realtime update
             : null}
         </ul>
         <form className="usersForm" action="#"   method="POST" onSubmit={this.handleSubmit}>
           <div className="FormContainer">
 
             <p>Please use this form to change user settings.</p>
-<<<<<<< HEAD
-<<<<<<< HEAD
 
->>>>>>> parent of 9f956fc... realtime update
 
             <p><label><b> ID Number  </b></label>
 
@@ -102,30 +53,6 @@ handleSubmit(e){
             <input type="text" placeholder="Enter Last Name" name="lastname" required></input></p>
 
 
-
-=======
-
-
-=======
-
-
->>>>>>> parent of 9f956fc... realtime update
-            <p><label><b> ID Number  </b></label>
-
-            <input type="num" placeholder="Enter ID#" name="id" required></input></p>
-
-            <p><label><b> First Name  </b></label>
-            <input type="text" placeholder="Enter First Name" name="firstname" required></input></p>
-
-            <p><label><b> Last Name  </b></label>
-            <input type="text" placeholder="Enter Last Name" name="lastname" required></input></p>
-
-
-
-<<<<<<< HEAD
->>>>>>> parent of 9f956fc... realtime update
-=======
->>>>>>> parent of 9f956fc... realtime update
             <div className="btn-group">
               <button type="submit" >Create User (POST)</button>
               <button type="button" >Update User aka (PUT)</button>
