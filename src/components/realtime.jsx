@@ -4,6 +4,7 @@ import axios from 'axios'
 //import rtDisplay component
 export default class Realtime extends React.Component {
 
+<<<<<<< HEAD
 
   constructor() {
     super();
@@ -18,9 +19,18 @@ export default class Realtime extends React.Component {
       this.setState({realtimeData: response.data});
     }).catch(function(e) {
       console.log(e);
-    });
-  }
+=======
 
+  axios.get('/realtime/reactshow??getRtJson=true')
+    .then(function (response) {
+      console.log(response);
+    })
+    .catch(function (error) {
+      console.log(error);
+>>>>>>> parent of 9f956fc... realtime update
+    });
+
+<<<<<<< HEAD
   render() {
 
     // const realtimeData = this.state.realtimeData;
@@ -42,4 +52,12 @@ export default class Realtime extends React.Component {
       </ul>
   </div>)
   }
+=======
+
+  return(
+    <div className='Home'>
+<h1>Real Time Data Update Page</h1>
+    </div>
+  )
+>>>>>>> parent of 9f956fc... realtime update
 }
