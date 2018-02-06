@@ -1,5 +1,17 @@
 import React from 'react'
-export default function Realtime(props) {
+import axios from 'axios'
+export default class Realtime extends React.Component {
+
+
+  axios.get('/realtime/reactshow??getRtJson=true')
+    .then(function (response) {
+      console.log(response);
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+
+
   return(
     <div className='Home'>
 <h1>Real Time Data Update Page</h1>
