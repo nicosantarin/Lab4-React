@@ -25,17 +25,17 @@ export default class Users extends React.Component {
 
   render() {
     return (<div className="Userhome">
-      <ul>
+
         {
           this.info
             ? this.info.map(int => {
-              return (<li>
+              return (<p>
                 {int}
-              </li>)
+              </p>)
             })
             : null
         }
-      </ul>
+
       <form className="usersForm" action="#" method="POST" onSubmit={this.handleSubmit}>
         <div className="FormContainer">
 

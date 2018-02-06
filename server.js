@@ -59,7 +59,8 @@ realtimeRoute.get('/reactshow', (req, res) => {
 // //write random data number to json when is page accessed
 // let data = JSON.stringify(rData);
 // fs.writeFileSync('./realtimedb.json', data);
-var mydata = [1,2,3,4]
+var mydata = fs.readFileSync('./src/realtimeDB.JSON','utf8')
+mydata = JSON.parse(mydata)
 
 console.log(req.query.getRtJson)
 if (req.query.getRtJson) {
@@ -68,8 +69,8 @@ if (req.query.getRtJson) {
 }
 
 //load and parse realtimedbJSON database to a variable
-var text = fs.readFileSync('./realtimedb.json','utf8')
-text = JSON.parse(text)
+// var text = fs.readFileSync('./src/realtimeDB.JSON','utf8')
+// text = JSON.parse(text)
 
  });
 
@@ -87,10 +88,10 @@ realtimeRoute.get('/data', (req, res) => {
 };
 //write random data number to json when is page accessed
 let data = JSON.stringify(rData);
-fs.writeFileSync('./realtimedb.json', data);
+fs.writeFileSync('./src/realtimeDB.JSON', data);
 
 //load and parse realtimedbJSON database to a variable
-var text = fs.readFileSync('./realtimedb.json','utf8')
+var text = fs.readFileSync('./src/realtimeDB.JSON','utf8')
 text = JSON.parse(text)
 //console.log (typeof text)
 res.send(text)
