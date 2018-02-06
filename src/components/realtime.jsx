@@ -28,7 +28,7 @@ export default class Realtime extends React.Component {
 
         return (
 
-              <DataCard datavalue = {obj}/>
+              datavalue = {obj}
 
         )
       })
