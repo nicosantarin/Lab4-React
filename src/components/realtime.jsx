@@ -5,6 +5,7 @@ import axios from 'axios'
 export default class Realtime extends React.Component {
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
   constructor() {
     super();
@@ -21,12 +22,16 @@ export default class Realtime extends React.Component {
       console.log(e);
 =======
 
+=======
+
+>>>>>>> parent of 9f956fc... realtime update
   axios.get('/realtime/reactshow??getRtJson=true')
     .then(function (response) {
       console.log(response);
     })
     .catch(function (error) {
       console.log(error);
+<<<<<<< HEAD
 >>>>>>> parent of 9f956fc... realtime update
     });
 
@@ -66,10 +71,18 @@ export default class Realtime extends React.Component {
   }
 =======
 
+=======
+    });
+
+
+>>>>>>> parent of 9f956fc... realtime update
   return(
     <div className='Home'>
 <h1>Real Time Data Update Page</h1>
     </div>
   )
+<<<<<<< HEAD
+>>>>>>> parent of 9f956fc... realtime update
+=======
 >>>>>>> parent of 9f956fc... realtime update
 }
