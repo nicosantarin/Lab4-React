@@ -32,6 +32,18 @@ export default class Realtime extends React.Component {
 
 <<<<<<< HEAD
   render() {
+<<<<<<< HEAD
+=======
+    const realtimeData = this.state.realtimeData;
+    let rtDatablock = '';
+
+    if (realtimeData.length > 0) {
+      rtDatablock = realtimeData.map(obj => {
+
+        return (
+
+              <DataCard datavalue = {obj}/>
+>>>>>>> parent of 63c0c6d... slight edit
 
     // const realtimeData = this.state.realtimeData;
     // let rtDatablock = '';
